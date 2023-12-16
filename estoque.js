@@ -8,6 +8,8 @@ let estoque = {
     ]
 };
 
+console.log(estoque);//verificação se o dicionário está correto
+
 // Função que retorna o estoque
 function getEstoque() {
     return structuredClone(estoque);
