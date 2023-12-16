@@ -15,21 +15,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 atualizaTela();
 
+// Função que lê o formulário
 function leFormulario(event)
 {
+    // Impede o comportamento padrão do formulário, que seria o envio e recarregamento da página.
     event.preventDefault(event);
+
+    // Obtém os valores dos campos do formulário.
     const quantidade = document.entrada.quantidade.valueAsNumber;
     const fruta = document.entrada.fruta.value;
     const origem = document.entrada.origem.value;
     const destino = document.entrada.destino.value;
     
-    console.log(`${origem} doa ${quantidade} ${fruta} para ${destino}`);
+    // console.log(`${origem} doa ${quantidade} ${fruta} para ${destino}`);
 
+    // Chama a função transacaoNoEstoque para processar a transação com base nos valores do formulário.
     transacaoNoEstoque(origem, destino, fruta, quantidade);
+
+    // Chama a função atualizaTela para atualizar a interface do usuário após a transação.
     atualizaTela();
 }
 
-
+// Função que preenche a lista
 function preencheLista(lista, estoqueDaPessoa) {
     lista.textContent = "";
 
@@ -43,7 +50,7 @@ function preencheLista(lista, estoqueDaPessoa) {
     }
 }
 
-
+// Função de atualização da tela
 function atualizaTela() {
     const estoque = getEstoque();
 
