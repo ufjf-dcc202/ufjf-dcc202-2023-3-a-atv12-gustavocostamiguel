@@ -41,7 +41,7 @@ function transacaoNoEstoque(origem, destino, tipo, quantidade) {
     // Se o destino for o "pomar", ajusta a quantidade do item na origem.
     if (destino === "pomar") {
         let itemEncontrado = estoque[origem].find(item => item.tipo === tipo);
-        console.log(itemEncontrado);
+        // console.log(itemEncontrado);
 
         if (itemEncontrado) {
             // Se a quantidade disponível na origem for suficiente, subtrai a quantidade.
@@ -61,7 +61,7 @@ function transacaoNoEstoque(origem, destino, tipo, quantidade) {
     // Se a origem for o "pomar", adiciona a quantidade do item ao destino.
     if (origem === "pomar") {
         const itemEncontrado = estoque[destino].find(item => item.tipo === tipo);
-        console.log(itemEncontrado);
+        // console.log(itemEncontrado);
 
         if (itemEncontrado) {
             // Se o item já existe no destino, incrementa a quantidade.
