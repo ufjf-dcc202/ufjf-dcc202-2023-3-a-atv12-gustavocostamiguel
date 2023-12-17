@@ -6,3 +6,4 @@ Esta é a atividade 11. Siga as instruções em sala e garanta que tanto os test
 `npm run e2e`
 
 `npm run test`
+ 

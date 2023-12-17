@@ -96,3 +96,4 @@ test('A transação e uma pessoa para outra deve ter o total das quantidades de 
   expect(estoque['joao'][1].tipo).toBe('banana');
   expect(estoque['joao'][1].quantidade).toBe(1);
 });
+ 

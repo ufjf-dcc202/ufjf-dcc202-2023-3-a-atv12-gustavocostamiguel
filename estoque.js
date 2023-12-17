@@ -21,20 +21,20 @@ function transacaoNoEstoque(origem, destino, tipo, quantidade) {
     // Verifica se a origem não existe no estoque e não é o "pomar", então cria uma entrada vazia para ela.
     if (!estoque[origem] && origem !== "pomar") {
         estoque[origem] = [];
-        console.log(estoque[origem]);
+        //console.log(estoque[origem]);
     }
 
     // Verifica se o destino não existe no estoque e não é o "pomar", então cria uma entrada vazia para ele.
     if (!estoque[destino] && destino !== "pomar") {
         estoque[destino] = [];
-        console.log(estoque[destino]);
+        //console.log(estoque[destino]);
     }
 
     // Se a quantidade for negativa ou a origem for igual ao destino, a transação não é válida, então retorna.
     if (quantidade < 0 || origem === destino) {
-        console.log(quantidade);
-        console.log(origem);
-        console.log(destino);
+        //console.log(quantidade);
+        //console.log(origem);
+        //console.log(destino);
         return;
     }
 

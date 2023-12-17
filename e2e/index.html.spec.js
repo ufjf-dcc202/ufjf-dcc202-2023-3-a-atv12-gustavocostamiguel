@@ -258,6 +258,6 @@ test.describe("comportamento", () => {
     await expect(liDeOlJoao).toHaveCount(1);
     await page.getByRole('button', { name: 'Limpar' }).click();
     await expect(liDeOlJoao).toHaveCount(0);
-  });
+  }); 
 
 });

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 atualizaTela();
-
+ 
 // Função que lê o formulário
 function leFormulario(event)
 {
